@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:rider_app/allScreens/loginScreen.dart';
 import 'package:rider_app/allScreens/mainscreen.dart';
 
 void main() {
@@ -10,12 +11,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Flash Rider App',
       theme: ThemeData(
-
+        fontFamily: "Signatra",
         primarySwatch: Colors.blue,
       ),
-      home: MainScreen(),
+      home: LoginScreen(),
       debugShowCheckedModeBanner: false,
     );
   }
