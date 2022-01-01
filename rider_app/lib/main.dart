@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:rider_app/allScreens/loginScreen.dart';
 import 'package:rider_app/allScreens/mainscreen.dart';
 
@@ -11,14 +12,15 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flash Rider App',
-      theme: ThemeData(
-        fontFamily: "Signatra",
-        primarySwatch: Colors.blue,
-      ),
-      home: LoginScreen(),
-      debugShowCheckedModeBanner: false,
-    );
+        title: 'Flash Rider App',
+        theme: ThemeData(
+          fontFamily: "Signatra",
+          primarySwatch: Colors.blue,
+          visualDensity: VisualDensity.adaptivePlatformDensity,
+        ),
+        home: LoginScreen(),
+        debugShowCheckedModeBanner: false,
+      );
   }
 }
 
